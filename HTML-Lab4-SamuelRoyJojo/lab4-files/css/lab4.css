@@ -1,0 +1,68 @@
+#flex-1, #flex-2 {
+  margin: 1em 0;
+  background-color: purple;
+}
+
+.item {
+  background-color: yellow;
+  padding: 30px;
+}
+
+/* FLEX 1 */
+#flex-1 {
+  max-width: 500px; /* make this no wider than 500px */
+  height: 300px;
+  
+  /* Set this as a flex container */
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Space out the items evenly */
+  align-items: flex-end; /* Align items to the bottom */
+}
+
+/* Flex stuff for the even items in #flex-1 here */
+#flex-1 .item:nth-child(even) {
+  align-self: center; /* Center even items vertically */
+}
+
+/* FLEX 2 */
+#flex-2 {
+  padding: 1em;
+  
+  /* Set this as a flex container */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks purple containers vertically */
+}
+
+.triple, .single {
+  padding: 1em;
+  background-color: yellow;
+}
+
+.triple {
+  /* This is a flex item. */
+  flex-basis: 100px; /* Base width */
+  flex-grow: 3; /* Grow three times wider */
+}
+
+.single {
+  /* This is a flex item. */
+  flex-basis: 100px; /* Base width */
+  flex-grow: 1; /* Grow to single width */
+}
+
+#nested-flex {
+  background-color: #bfa0bf;
+  padding: 1em;
+
+  /* This is a flex container. */
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /* Allows items to break to a new line */
+}
+
+.card {
+  background-color: orange;
+  height: 150px;
+
+  /* This is a flex item. */
+  flex: 0 0 100px; /* Default width of 100px */
+}
