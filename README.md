@@ -1,5 +1,5 @@
 # Web Design - HTTP 5121 ONA
-
+```markdown
 ## Description
 This repository contains projects and exercises related to web design and development, focusing on HTTP protocols and client-server interactions.
 
